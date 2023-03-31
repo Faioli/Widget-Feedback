@@ -17,11 +17,11 @@ export class SubmitFeedbackUseCase {
         const { type, comment, screenshot } = request;
 
         if(!type) {
-            throw new Error('Type is required.')
+            throw new Error('Type is requireds.')
         }
 
         if(!comment) {
-            throw new Error('Type is required.')
+            throw new Error('Comment is required.')
         }
 
         if (screenshot && !screenshot.startsWith('data:image/png;base64')) {
